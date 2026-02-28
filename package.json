@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build && gh-pages -d dist --dotfiles"
+    "deploy": "[ $(git branch --show-current) = main ] && npm run build && gh-pages -d dist --dotfiles || echo 'Not on main branch, deploy cancelled'"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
