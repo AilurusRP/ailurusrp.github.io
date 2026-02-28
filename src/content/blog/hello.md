@@ -5,7 +5,7 @@ description: "hello"
 heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 
-# Hello
+#### Hello
 
 First blog.
 
